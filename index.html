@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>LogIn System</title>
+    <link rel="icon" type="image/x-icon" href="./img/title-icon.png" />
+
+    <!-- link css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- link fontawesome -->
+    <script src="https://kit.fontawesome.com/91b7a0e05b.js" crossorigin="anonymous"></script>
+
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login">
+        <form action="./php/authenticate.php" method="post">
+            <!-- login head -->
+            <div class="login-head">
+                <p id="login-title">Login Page</p>
+            </div>
+
+            <!-- login body -->
+            <div class="login-body">
+
+                <!-- expression -->
+                <div class="login-exp">
+                    <div class="expression">
+                        <img src="./img/expression/happy.png" alt="expression" class="face-exp" id="login-exp-img">
+                    </div>
+                </div>
+
+                <!-- login info area -->
+                <div class="login-area">
+                    <div class="login-row">
+                        <div class="icon">
+                            <label for="uname">
+                                <i class="fa-lg fa-solid fa-user"></i>
+                            </label>
+                        </div>
+                        <div class="input-fild">
+                            <input type="text" placeholder="Enter Username" name="uname" id="uname"
+                                onfocus="changeImage()" onfocusout="defImg()" required>
+                        </div>
+                    </div>
+                    <div class="login-row">
+                        <div class="icon">
+                            <label for="psw">
+                                <i class="fa-lg fa-solid fa-lock"></i>
+                            </label>
+                        </div>
+                        <div class="input-fild">
+                            <input type="password" placeholder="Enter Password" name="psw" id="psw"
+                                onfocus="changeImage()" onfocusout="defImg()" required>
+                        </div>
+                    </div>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    <button type="submit">Login</button>
+                </div>
+
+            </div>
+
+            <!-- login footer -->
+            <div class="login-footer">
+                <button type="reset" class="login-btn cancelbtn">Cancel</button>
+                <button type="button" class="login-btn forgotbtn"><span>Forgot <a href="#">password?</a></span></button>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="./js/expression.js"></script>
+</body>
+
+</html>

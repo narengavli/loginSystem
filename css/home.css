@@ -1,0 +1,9 @@
+/* content css */
+.content {
+    padding: 1vh 1vw;
+}
+
+#user-name {
+    font-size: 24px;
+    text-align: center;
+}
