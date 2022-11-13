@@ -1,6 +1,7 @@
 <h1 align="center">LOGIN SYSTEM</h1>
+<center><img src="https://github.com/narengavli/loginsystem/blob/fbce8321c6469b2f226dd8836c0500bdfa7d42b2/img/home-page.gif"></center>
 
-Live Website Link :
+**Live Page Link:**
 
 <a href="https://narengavli.github.io/loginsystem" target="_blank"><img src="https://img.shields.io/badge/LOGIN%20SYSTEM-LIVE%20WEBSITE-blue"/></a>
 
